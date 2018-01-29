@@ -8,4 +8,8 @@
     <string name="fifteen_percent">15%</string>
     <string name="eighteen_percent">18%</string>
     <string name="custom_percent">Custom</string>
+    <string name="custom_tip">Custom</string>
+    <string name="tip_label">Tip</string>
+    <string name="total_label">Total</string>
+    <string name="zero_price">0.00</string>
 </resources>
