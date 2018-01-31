@@ -35,15 +35,19 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     bill = Double.parseDouble(billValue.getText().toString());
 
-                    if (bill <= 0.00) {
-                        billValue.setError("Enter Bill Total");
+                    if (bill <= 0.00 || billValue.getText().toString().equals("")) {
                         bill = 0.00;
+                        tipCost.setText(0.0+"");
+                        totalCost.setText(0.0+"");
+                        billValue.setError("Enter Bill Total");
                     }
 
                     totalCost.setText(bill.toString());
 
                 } catch (Exception e) {
                     billValue.setError("Enter Bill Total");
+                    tipCost.setText(0.0+"");
+                    totalCost.setText(0.0+"");
                     Log.d("TipCalc", "Value entered cannot be parsed to an double");
                 }
             }
