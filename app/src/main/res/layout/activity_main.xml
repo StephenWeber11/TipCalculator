@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
+    android:id="@+id/constraintLayout"
     tools:context="com.mobileappdev.uncc.tipcalculator.MainActivity">
 
     <EditText
@@ -212,13 +213,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="8dp"
         android:text="@string/zero_price"
         app:layout_constraintBottom_toTopOf="@+id/total_cost"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/tip_label"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/total_cost"
@@ -227,13 +229,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="8dp"
         android:text="@string/zero_price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/total_label"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
